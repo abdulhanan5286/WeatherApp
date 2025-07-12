@@ -1,0 +1,12 @@
+
+CXX = g++
+CXXFLAGS = -std=c++17 -Iinclude
+
+SRC = src/Main.cpp
+TARGET = main
+
+all:
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET)
